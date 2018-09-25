@@ -9,8 +9,15 @@ The purpose of this assignment is to get comfortable with the following concepts
 - Array manipulation
 - Functions:
   - Defining named functions
-  - Defining anonymous functions using the shorthand lambda style ex: (x) => x
-  - Understand how to call a function with the arguments (parameters) that it needs
+  - Adding parameters to functions
+  - Calling functions
+- Core data types:
+  - Number
+  - String
+  - Object
+  - Array
+  - Function
+  - Boolean
 
 # Exercise Tasks
 
@@ -19,8 +26,8 @@ The purpose of this assignment is to get comfortable with the following concepts
 - Create a new branch to do your work on
 - Make the necessary changes to the code
 - Push your code up to github
-- Send me a pull request
+- Send me a pull requests whenever you have code that you want me to review
 
-## Code Objectives
+## Code
 
-You will need to modify the code in the code.js file, specifically in the transform_array function. When you are done, all of the console.asserts should show the expected output.
+You will need to modify the code in the code.js file
