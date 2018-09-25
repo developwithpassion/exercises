@@ -1,0 +1,10 @@
+{
+  "name": "exercises",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Interns 2018 Exercises",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.19.0"
+  }
+}

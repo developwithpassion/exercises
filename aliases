@@ -1,0 +1,25 @@
+function assignment_1() {
+  export ASSIGNMENT=assignment_1
+}
+
+alias down='docker-compose down'
+
+function _run() {
+  echo $ASSIGNMENT
+  docker-compose run --rm \
+  $ASSIGNMENT $*
+}
+
+function wsb() {
+  _run $*
+}
+
+alias ws='wsb /bin/bash'
+alias node='wsb node'
+alias yarn='wsb yarn'
+
+function yri(){
+  wsb rm -rf node_modules
+  yarn install
+}
+
