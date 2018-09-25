@@ -23,4 +23,4 @@ The purpose of this assignment is to get comfortable with the following concepts
 
 ## Code Objectives
 
-You will need to modify the code in the assignment_1.js file, specifically in the transform_array function. When you are done, all of the console.asserts should show the expected output.
+You will need to modify the code in the code.js file, specifically in the transform_array function. When you are done, all of the console.asserts should show the expected output.
