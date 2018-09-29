@@ -1,14 +1,15 @@
-const each = (action, items) => {
-  for (let i = 0; i < items.length; i++) {
-    action(items[i])
-  }
+const each = (action, items, i = 0) => {  // trying recursion as an alternative to using the "for" loop (as per our previous conversation)
+  if (i === items.length) return
+  action(items[i])
+  each(action, items, i+1)
 }
 
-const each_in_reverse = (action, items) => {
-  for (let i = items.length - 1; i >= 0; i--) {
-    action(items[i])
+const each_in_reverse = (action, items, i = items.length - 1) => {
+  if (i === -1) return
+  action(items[i])
+  each_in_reverse(action, items, i-1)
   }
-}
+
 
 const map = (mapper, items, traversal = each) => {
   let results = []
@@ -33,6 +34,15 @@ console.log(map(x => x * 2, items, each_in_reverse))
 //
 //  It should return the set of items that match the criteria that was provided
 
-// console.log(filter(x => x % 2 === 0, items))
+const filter = (criteria, items) => {
+  
+  let results = []
+  for (i = 0; i < items.length; i++) {
+      if (criteria(items[i])) results.push(items[i])
+    }
+  return results
+}
+console.log(filter(x => x % 2 === 0, items))
+
 // Running the above code should results in:
 // [2,4,6,8,10,12,14,16]
