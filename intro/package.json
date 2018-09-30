@@ -1,0 +1,16 @@
+{
+  "name": "exercises",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Interns 2018 Exercises",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^4.19.0",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha --recursive '**/*_spec.js'",
+    "testw": "mocha --recursive '**/*_spec.js' --watch"
+  }
+}
