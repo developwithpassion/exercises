@@ -1,25 +1,29 @@
-function assignment_1() {
-  export ASSIGNMENT=assignment_1
+function intro() {
+  export WORKING_DIR=intro
 }
 
 alias down='docker-compose down'
 
 function _run() {
-  echo $ASSIGNMENT
+  echo $WORKING_DIR
   docker-compose run --rm \
-  $ASSIGNMENT $*
+  $WORKING_DIR $*
 }
 
 function wsb() {
   _run $*
 }
 
+alias so='source aliases'
 alias ws='wsb /bin/bash'
 alias node='wsb node'
 alias yarn='wsb yarn'
+alias mocha='yarn run mocha'
+alias mochar='mocha --recursive "./{,!(node_modules)/**/}*_spec.js"'
 
 function yri(){
   wsb rm -rf node_modules
   yarn install
 }
+
 
