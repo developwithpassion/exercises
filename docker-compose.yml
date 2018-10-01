@@ -1,11 +1,11 @@
 version: '2'
 
 services:
-  assignment_1:
+  intro:
     build: 
-      context: ./assignment_1/
+      context: ./intro/
       dockerfile: Dockerfile
     volumes:
-      - ./assignment_1:/app
+      - ./intro:/app
     working_dir: /app
 
