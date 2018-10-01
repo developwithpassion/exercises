@@ -10,6 +10,7 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
+    "mocha": "mocha",
     "test": "mocha --recursive '**/*_spec.js'",
     "testw": "mocha --recursive '**/*_spec.js' --watch"
   }
