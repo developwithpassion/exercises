@@ -2,8 +2,9 @@
 
 ## Document conventions
 
-- Arguments to terminal commands will be represented as [argument_name]. When you type in an argument do not include the square brackets unless explictly asked
 - Every command is terminated with pressing enter. I won't show enter as something to be pressed
+
+## Setting Up
 
 1. Download and install [virtualbox](https://www.virtualbox.org/wiki/Downloads)
 2. Download the disc images for [Ubuntu 18.04.1](https://www.ubuntu.com/download/desktop/thank-you?version=18.04.1&architecture=amd64)
@@ -68,7 +69,8 @@ This will install a bunch of utilities into the Ubuntu instance that will help p
 8. At the terminal prompt run the following commands
 
 ```bash
-whoami
-sudo usermod -aG sudo [value displayed from whoami command]
-sudo usermod -aG vboxsf [value displayed from whoami command]
+sudo usermod -aG sudo $USER
+sudo usermod -aG vboxsf $USER
 ```
+
+9. Restart your virtual machine
