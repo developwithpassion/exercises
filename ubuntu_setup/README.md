@@ -69,5 +69,6 @@ This will install a bunch of utilities into the Ubuntu instance that will help p
 
 ```bash
 whoami
-sudo usermod -aG sudo [your_user_name]
+sudo usermod -aG sudo [value displayed from whoami command]
+sudo usermod -aG vboxsf [value displayed from whoami command]
 ```
